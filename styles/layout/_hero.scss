@@ -1,7 +1,7 @@
 .hero {
     @extend %grid;
 
-    grid-template-columns: 1fr 54rem;
+    grid-template-columns: minmax(33.9rem, 44.5rem) minmax(47.8rem, 54rem);
     column-gap: 12.5rem;
     margin-top: 8.3rem;
 
@@ -52,13 +52,8 @@
 @include respond-to($breakpoint-tablets) {
     .hero {
         margin-top: 6.2rem;
-        column-gap: 3.2rem;
-        grid-template-columns: 33.9rem 1fr 47.8rem;
+        column-gap: 6.9rem;
         max-width: 100%;
-
-        &__content {
-            grid-column: 1 / 2;
-        }
 
         &__title {
             font-size: 4.8rem;
@@ -76,9 +71,6 @@
         }
 
         &__image {
-            grid-column: 3;
-            max-width: 47.8rem;
-
             &--desktop {
                 display: none;
             }

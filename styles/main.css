@@ -120,7 +120,7 @@ body {
 }
 
 .hero {
-  grid-template-columns: 1fr 54rem;
+  grid-template-columns: minmax(33.9rem, 44.5rem) minmax(47.8rem, 54rem);
   column-gap: 12.5rem;
   margin-top: 8.3rem;
 }
@@ -165,12 +165,8 @@ body {
 @media (min-width: 48em) and (max-width: 64em) {
   .hero {
     margin-top: 6.2rem;
-    column-gap: 3.2rem;
-    grid-template-columns: 33.9rem 1fr 47.8rem;
+    column-gap: 6.9rem;
     max-width: 100%;
-  }
-  .hero__content {
-    grid-column: 1 / 2;
   }
   .hero__title {
     font-size: 4.8rem;
@@ -183,10 +179,6 @@ body {
   .hero__release-date {
     font-size: 1.5rem;
     margin-left: 3.7rem;
-  }
-  .hero__image {
-    grid-column: 3;
-    max-width: 47.8rem;
   }
   .hero__image--desktop {
     display: none;
