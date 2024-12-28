@@ -5,3 +5,9 @@ $color-navy-blue: #162542;
 $color-navy-gray: #7b8bad;
 $color-light-gray: #e8eff2;
 $color-white: #fff;
+
+//* NOTE: breakpoints
+$breakpoint-small-mobiles: "(min-width: 20em) and (max-width: 30em)";
+$breakpoint-large-mobiles: "(min-width: 30.063em) and (max-width: 47.94em)";
+$breakpoint-tablets: "(min-width: 48em) and (max-width: 64em)";
+$breakpoint-large-tablets: "(min-width: 64.063em) and (max-width: 79.063em)";

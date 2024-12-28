@@ -1,7 +1,6 @@
 .main-container {
-    width: 144rem;
+    max-width: 144rem;
     margin: 0 auto;
-    border: 1px solid red;
     position: relative;
     padding: 5.5rem 16.5rem 4rem;
     position: relative;
@@ -30,4 +29,14 @@
     //     border-radius: 2rem;
     //     transform: translateX(50%);
     // }
+}
+
+@include respond-to($breakpoint-tablets) {
+    .main-container {
+        padding: 4rem 4rem 4.3rem;
+
+        &::after {
+            display: none;
+        }
+    }
 }

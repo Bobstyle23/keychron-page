@@ -38,5 +38,54 @@
         max-width: 100%;
         height: auto;
         border-radius: 2rem;
+
+        &--desktop {
+            display: block;
+        }
+
+        &--tablet, &--mobile {
+            display: none;
+        }
+    }
+}
+
+@include respond-to($breakpoint-tablets) {
+    .hero {
+        margin-top: 6.2rem;
+        column-gap: 3.2rem;
+        grid-template-columns: 33.9rem 1fr 47.8rem;
+        max-width: 100%;
+
+        &__content {
+            grid-column: 1 / 2;
+        }
+
+        &__title {
+            font-size: 4.8rem;
+            margin-bottom: 3.4rem;
+        }
+
+        &__description {
+            font-size: 1.6rem;
+            line-height: 1.625;
+        }
+
+        &__release-date {
+            font-size: 1.5rem;
+            margin-left: 3.7rem;
+        }
+
+        &__image {
+            grid-column: 3;
+            max-width: 47.8rem;
+
+            &--desktop {
+                display: none;
+            }
+
+            &--tablet {
+                display: block;
+            }
+        }
     }
 }
