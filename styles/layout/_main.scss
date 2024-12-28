@@ -1,7 +1,33 @@
 .main-container {
-  width: 144rem;
-  margin: 0 auto;
-  border: 1px solid red;
-  position: relative;
-  padding: 5.5rem 16.5rem 4rem;
+    width: 144rem;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+    padding: 5.5rem 16.5rem 4rem;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 25.5rem;
+        height: 24rem;
+        background-color: $color-light-gray;
+        left: 100%;
+        top: 19.5rem;
+        transform: translateX(-50%);
+        border-radius: 2rem;
+    }
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 25.5rem;
+    //     height: 23.6rem;
+    //     background-color: $color-light-gray;
+    //     right: 100%;
+    //     top: 0;
+    //     border-radius: 2rem;
+    //     transform: translateX(50%);
+    // }
 }

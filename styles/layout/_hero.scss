@@ -1,0 +1,42 @@
+.hero {
+    @extend %grid;
+
+    grid-template-columns: 1fr 54rem;
+    column-gap: 12.5rem;
+    margin-top: 8.3rem;
+
+    &__content {
+        align-self: center;
+    }
+
+    &__title {
+        @extend %text-preset-h1;
+
+        color: $color-navy-blue;
+        margin-bottom: 2.4rem;
+    }
+
+    &__description {
+        @extend %text-preset-body;
+
+        font-size: 1.8rem;
+        line-height: 1.44;
+        color: $color-navy-gray;
+        margin-bottom: 4rem;
+    }
+
+    &__release-date {
+        @extend %text-preset-body;
+
+        color: $color-navy-gray;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 4rem;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 2rem;
+    }
+}
