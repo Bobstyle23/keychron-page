@@ -1,0 +1,86 @@
+/*NOTE: colors*/
+/* NOTE: typography */
+.btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+/* NOTE: buttons */
+.btn {
+  width: 17.5rem;
+  height: 5.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* NOTE: flexbox */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NOTE: grid */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  background-color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--orange {
+  background-color: #f16718;
+}
+
+.btn--orange:hover {
+  background-color: #ff9b62;
+}
+
+.btn--light-gray {
+  background-color: #e8eff2;
+  color: #162542;
+}
+
+.btn--light-gray:hover {
+  background-color: #162542;
+  color: #fff;
+}
+
+.main-container {
+  width: 144rem;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: relative;
+  padding: 5.5rem 16.5rem 4rem;
+}
+
+.header {
+  max-width: 111rem;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

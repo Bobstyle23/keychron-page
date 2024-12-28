@@ -1,0 +1,8 @@
+.header {
+  max-width: 111rem;
+  height: auto;
+  @extend %flexbox;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

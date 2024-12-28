@@ -1,0 +1,54 @@
+/* NOTE: typography */
+
+%text-preset-h1 {
+  font-family: "Barlow";
+  font-weight: 900;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+}
+
+%text-preset-h2 {
+  @extend %text-preset-h1;
+  font-size: 3.2rem;
+  line-height: 1.125;
+}
+
+%text-preset-h3 {
+  @extend %text-preset-h1;
+  font-size: 2.4rem;
+  line-height: 1.167;
+}
+
+%text-preset-body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+/* NOTE: buttons */
+
+%button-style {
+  width: 17.5rem;
+  height: 5.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: $color-white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  @extend %text-preset-body;
+}
+
+/* NOTE: flexbox */
+%flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NOTE: grid */
+%grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

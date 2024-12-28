@@ -1,0 +1,24 @@
+.btn {
+  @extend %button-style;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--orange {
+    background-color: $color-orange;
+    &:hover {
+      background-color: $color-light-orange;
+    }
+  }
+
+  &--light-gray {
+    background-color: $color-light-gray;
+    color: $color-navy-blue;
+
+    &:hover {
+      background-color: $color-navy-blue;
+      color: $color-white;
+    }
+  }
+}
