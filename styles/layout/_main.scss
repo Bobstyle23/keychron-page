@@ -40,3 +40,18 @@
         }
     }
 }
+
+
+@include respond-to($breakpoint-small-mobiles) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .main-container {
+        padding: 2.3rem 2.4rem 5rem;
+    }
+
+    &::after {
+        display: none;
+    }
+}

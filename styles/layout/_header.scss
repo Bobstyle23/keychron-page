@@ -8,3 +8,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@include respond-to($breakpoint-small-mobiles) {
+    .header {
+        &__btn {
+            max-width: 15rem;
+            font-size: 1.4rem;
+        }
+    }
+}
