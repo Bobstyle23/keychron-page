@@ -25,33 +25,8 @@
     //     height: 23.6rem;
     //     background-color: $color-light-gray;
     //     right: 100%;
-    //     top: 0;
+    //     top: 0rem;
     //     border-radius: 2rem;
     //     transform: translateX(50%);
     // }
-}
-
-@include respond-to($breakpoint-tablets) {
-    .main-container {
-        padding: 4rem 4rem 4.3rem;
-
-        &::after {
-            display: none;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-small-mobiles) {
-    html {
-        font-size: 56.25%;
-    }
-
-    .main-container {
-        padding: 2.3rem 2.4rem 5rem;
-    }
-
-    &::after {
-        display: none;
-    }
 }
