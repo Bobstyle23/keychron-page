@@ -1,6 +1,6 @@
 /*NOTE: colors*/
 /* NOTE: typography */
-.information__title, .hero__title {
+.information__title, .features__title, .hero__title {
   font-family: "Barlow";
   font-weight: 900;
   font-size: 5.6rem;
@@ -12,7 +12,12 @@
   line-height: 1.125;
 }
 
-.btn, .hero__description, .hero__release-date, .information__description {
+.features__title {
+  font-size: 2.4rem;
+  line-height: 1.167;
+}
+
+.btn, .hero__description, .hero__release-date, .information__description, .features__description {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.625;
@@ -31,7 +36,7 @@
 }
 
 /* NOTE: flexbox */
-.header, .information {
+.header, .information, .features__container, .features__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +44,7 @@
 }
 
 /* NOTE: grid */
-.hero {
+.hero, .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -105,18 +110,6 @@ body {
   top: 19.5rem;
   transform: translateX(-50%);
   border-radius: 2rem;
-}
-
-.main-container::before {
-  content: "";
-  position: absolute;
-  width: 25.5rem;
-  height: 24rem;
-  background-color: #e8eff2;
-  right: 100%;
-  bottom: 4rem;
-  border-radius: 2rem;
-  transform: translateX(50%);
 }
 
 .header {
@@ -214,5 +207,35 @@ body {
 }
 
 .information__description {
+  color: #7b8bad;
+}
+
+.features {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 32.3rem;
+  column-gap: 3rem;
+  margin: 16.8rem 0 12.8rem;
+}
+
+.features__container {
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+
+.features__icon {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: #f16718;
+  border-radius: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.features__title {
+  color: #162542;
+  max-width: 20rem;
+}
+
+.features__description {
   color: #7b8bad;
 }
