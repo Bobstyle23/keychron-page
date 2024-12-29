@@ -1,12 +1,14 @@
 .hero {
     @extend %grid;
 
-    grid-template-columns: minmax(33.9rem, 44.5rem) minmax(47.8rem, 54rem);
+    // grid-template-columns: minmax(33.9rem, 44.5rem) minmax(47.8rem, 54rem);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 12.5rem;
     margin-top: 8.3rem;
 
     &__content {
         align-self: center;
+        max-width: 44.5rem;
     }
 
     &__title {
@@ -35,7 +37,7 @@
     }
 
     &__image {
-        max-width: 100%;
+        max-width: 54rem;
         height: auto;
         border-radius: 2rem;
 

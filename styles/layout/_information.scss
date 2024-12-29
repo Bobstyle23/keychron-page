@@ -1,15 +1,14 @@
 .information {
-    @extend %flexbox;
+    @extend %grid;
 
-    flex-direction: row;
-    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 3rem;
+    place-items: center;
     margin-top: 3rem;
-    justify-content: flex-start;
-    gap: 3rem;
 
     &__image {
         width: 100%;
-        min-height: 48rem;
+        height: 48rem;
         border-radius: 2rem;
 
         &--first {
@@ -22,6 +21,7 @@
 
         &--second {
             max-width: 44.5rem;
+            justify-self: baseline;
         }
     }
 
