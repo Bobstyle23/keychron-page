@@ -6,6 +6,21 @@
     place-items: center;
     margin-top: 3rem;
 
+    .decoration {
+        anchor-name: --decoration;
+    }
+
+    .target {
+        position: absolute;
+        position-anchor: --decoration;
+        position-area: top left;
+        width: 25.5rem;
+        height: 24rem;
+        background-color: $color-light-gray;
+        border-radius: 2rem;
+        right: 55%;
+    }
+
     &__image {
         width: 100%;
         height: 48rem;
