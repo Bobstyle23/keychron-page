@@ -1,0 +1,45 @@
+.information {
+    @extend %flexbox;
+
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3rem;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    &__image {
+        width: 100%;
+        min-height: 48rem;
+        border-radius: 2rem;
+
+        &--first {
+            max-width: 25.5rem;
+            background-image: linear-gradient(rgba($color-orange, 74.86%), rgba($color-orange, 74.86%)), url("../../assets/desktop/image-phone-and-keyboard.jpg");
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+
+        &--second {
+            max-width: 44.5rem;
+        }
+    }
+
+    &__content {
+        max-width: 26rem;
+        margin-left: auto;
+    }
+
+    &__title {
+        @extend %text-preset-h2;
+
+        color: $color-navy-blue;
+        margin-bottom: 2.7rem;
+    }
+
+    &__description {
+        @extend %text-preset-body;
+
+        color: $color-navy-gray;
+    }
+}
