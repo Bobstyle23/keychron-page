@@ -37,3 +37,44 @@
 //         color: $color-navy-gray;
 //     }
 // }
+
+.features {
+    @extend %grid;
+
+    padding: 0 2.4rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 6.4rem;
+    margin-bottom: 9.6rem;
+
+    &__container {
+        @extend %flexbox;
+
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+        text-align: center;
+    }
+
+    &__icon {
+        @extend %flexbox;
+
+        width: 6.5rem;
+        height: 6.5rem;
+        background-color: $color-orange;
+        border-radius: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__title {
+        @extend %text-preset-h3;
+
+        max-width: 20rem;
+    }
+
+    &__description {
+        @extend %text-preset-body;
+
+        max-width: 32.7rem;
+    }
+}

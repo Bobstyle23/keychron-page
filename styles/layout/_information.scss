@@ -42,9 +42,13 @@
 
     &__title {
         @extend %text-preset-h2;
+
+        max-width: 25.5rem;
     }
 
     &__description {
         @extend %text-preset-body;
+
+        max-width: 32.7rem;
     }
 }
