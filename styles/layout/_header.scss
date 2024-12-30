@@ -1,19 +1,29 @@
-.header {
-    max-width: 111rem;
-    height: auto;
+// .header {
+//     max-width: 111rem;
+//     height: auto;
 
+//     @extend %flexbox;
+
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// @include respond-to($breakpoint-small-mobiles) {
+//     .header {
+//         &__btn {
+//             max-width: 15rem;
+//             font-size: 1.4rem;
+//         }
+//     }
+// }
+.header {
     @extend %flexbox;
 
+    height: auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-@include respond-to($breakpoint-small-mobiles) {
-    .header {
-        &__btn {
-            max-width: 15rem;
-            font-size: 1.4rem;
-        }
-    }
+    margin-bottom: 6.4rem;
+    padding: 2.4rem 2.4rem 0;
 }

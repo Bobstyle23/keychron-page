@@ -1,39 +1,39 @@
-.features {
-    @extend %grid;
+// .features {
+//     @extend %grid;
 
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 32.3rem;
-    column-gap: 3rem;
-    margin: 16.8rem 0 12.8rem;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 32.3rem;
+//     column-gap: 3rem;
+//     margin: 16.8rem 0 12.8rem;
 
-    &__container {
-        @extend %flexbox;
+//     &__container {
+//         @extend %flexbox;
 
-        align-items: baseline;
-        justify-content: flex-start;
-        gap: 2.4rem;
-    }
+//         align-items: baseline;
+//         justify-content: flex-start;
+//         gap: 2.4rem;
+//     }
 
-    &__icon {
-        width: 6.5rem;
-        height: 6.5rem;
-        background-color: $color-orange;
-        border-radius: 1.6rem;
-        margin-bottom: 2.4rem;
+//     &__icon {
+//         width: 6.5rem;
+//         height: 6.5rem;
+//         background-color: $color-orange;
+//         border-radius: 1.6rem;
+//         margin-bottom: 2.4rem;
 
-        @extend %flexbox;
-    }
+//         @extend %flexbox;
+//     }
 
-    &__title {
-        @extend %text-preset-h3;
+//     &__title {
+//         @extend %text-preset-h3;
 
-        color: $color-navy-blue;
-        max-width: 20rem;
-    }
+//         color: $color-navy-blue;
+//         max-width: 20rem;
+//     }
 
-    &__description {
-        @extend %text-preset-body;
+//     &__description {
+//         @extend %text-preset-body;
 
-        color: $color-navy-gray;
-    }
-}
+//         color: $color-navy-gray;
+//     }
+// }
