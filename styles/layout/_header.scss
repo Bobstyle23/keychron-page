@@ -1,16 +1,24 @@
 .header {
-  @extend %flexbox;
+    @extend %flexbox;
 
-  height: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 6.4rem;
-  padding: 2.4rem 2.4rem 0;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+    padding: 2.4rem 2.4rem 0;
 }
 
 @include respond-to($breakpoint-tablets) {
-  .header {
-    padding: 4rem 4rem 0;
-  }
+    .header {
+        padding: 4rem 4rem 0;
+    }
+}
+
+
+@include respond-to($breakpoint-desktops) {
+    .header {
+        padding: 5.5rem 16.5rem 0;
+        margin-bottom: 8.3rem;
+    }
 }

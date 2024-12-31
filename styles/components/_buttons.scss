@@ -23,3 +23,10 @@
         }
     }
 }
+
+@include respond-to($breakpoint-desktops) {
+    .btn {
+        width: 17.5rem;
+        font-size: 1.6rem;
+    }
+}
