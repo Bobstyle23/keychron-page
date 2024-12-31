@@ -185,8 +185,6 @@ body {
   gap: 2.4rem;
   text-align: center;
   margin-bottom: 11rem; }
-.information__title {
-  max-width: 25.5rem; }
 .information__description {
   max-width: 32.7rem; }
 
@@ -229,11 +227,22 @@ body {
     background-color: #f16718;
     border-radius: 1.6rem;
     margin-bottom: 2.4rem; }
-  .features__title {
-    max-width: 20rem; }
   .features__description {
     max-width: 32.7rem; }
 
+@media (min-width: 48em) and (max-width: 64em) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4rem;
+    row-gap: 7.2rem;
+    column-gap: 1.1rem;
+    margin-bottom: 14.2rem; }
+    .features__container {
+      align-items: baseline;
+      text-align: justify;
+      max-width: 28.1rem; }
+    .features__description {
+      max-width: 100%; } }
 .footer {
   max-width: 27.2rem;
   margin: 0 auto 5rem; }

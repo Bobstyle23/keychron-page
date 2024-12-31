@@ -1,80 +1,58 @@
-// .features {
-//     @extend %grid;
-
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-template-rows: 32.3rem;
-//     column-gap: 3rem;
-//     margin: 16.8rem 0 12.8rem;
-
-//     &__container {
-//         @extend %flexbox;
-
-//         align-items: baseline;
-//         justify-content: flex-start;
-//         gap: 2.4rem;
-//     }
-
-//     &__icon {
-//         width: 6.5rem;
-//         height: 6.5rem;
-//         background-color: $color-orange;
-//         border-radius: 1.6rem;
-//         margin-bottom: 2.4rem;
-
-//         @extend %flexbox;
-//     }
-
-//     &__title {
-//         @extend %text-preset-h3;
-
-//         color: $color-navy-blue;
-//         max-width: 20rem;
-//     }
-
-//     &__description {
-//         @extend %text-preset-body;
-
-//         color: $color-navy-gray;
-//     }
-// }
-
 .features {
-    @extend %grid;
+  @extend %grid;
 
-    padding: 0 2.4rem;
-    grid-template-columns: 1fr;
+  padding: 0 2.4rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  row-gap: 6.4rem;
+  margin-bottom: 9.6rem;
+
+  &__container {
+    @extend %flexbox;
+
     align-items: center;
-    row-gap: 6.4rem;
-    margin-bottom: 9.6rem;
+    justify-content: center;
+    gap: 2.4rem;
+    text-align: center;
+  }
+
+  &__icon {
+    @extend %flexbox;
+
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: $color-orange;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    @extend %text-preset-h3;
+  }
+
+  &__description {
+    @extend %text-preset-body;
+
+    max-width: 32.7rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4rem;
+    row-gap: 7.2rem;
+    column-gap: 1.1rem;
+    margin-bottom: 14.2rem;
 
     &__container {
-        @extend %flexbox;
-
-        align-items: center;
-        justify-content: center;
-        gap: 2.4rem;
-        text-align: center;
-    }
-
-    &__icon {
-        @extend %flexbox;
-
-        width: 6.5rem;
-        height: 6.5rem;
-        background-color: $color-orange;
-        border-radius: 1.6rem;
-        margin-bottom: 2.4rem;
-    }
-
-    &__title {
-        @extend %text-preset-h3;
-
-        max-width: 20rem;
+      align-items: baseline;
+      text-align: justify;
+      max-width: 28.1rem;
     }
 
     &__description {
-        @extend %text-preset-body;
-
-        max-width: 32.7rem;
+      max-width: 100%;
     }
+  }
 }
