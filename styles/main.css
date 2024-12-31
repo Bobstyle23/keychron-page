@@ -293,6 +293,7 @@ body {
 .information__gallery-image--first {
   position: relative;
   transform: translateX(-2rem);
+  filter: opacity(0.8);
 }
 
 .information__gallery-image--first::before {
