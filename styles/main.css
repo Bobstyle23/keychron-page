@@ -118,7 +118,6 @@ body {
 @media (min-width: 64.063em) {
   .btn {
     width: 17.5rem;
-    font-size: 1.6rem;
   }
 }
 
@@ -443,6 +442,19 @@ body {
   }
 }
 
+@media (min-width: 64.063em) {
+  .features {
+    padding: 0 16.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
+    column-gap: 3rem;
+    margin-bottom: 12.8rem;
+  }
+  .features__container {
+    align-items: baseline;
+    text-align: justify;
+  }
+}
+
 .footer {
   max-width: 27.2rem;
   margin: 0 auto 5rem;
@@ -454,4 +466,10 @@ body {
 
 .footer p span {
   font-weight: 500;
+}
+
+@media (min-width: 64.063em) {
+  .footer {
+    margin: 0 auto 4rem;
+  }
 }

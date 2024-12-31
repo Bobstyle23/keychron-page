@@ -12,3 +12,9 @@
         }
     }
 }
+
+@include respond-to($breakpoint-desktops) {
+    .footer {
+        margin: 0 auto 4rem;
+    }
+}
