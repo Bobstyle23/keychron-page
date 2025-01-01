@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -76,36 +76,32 @@
       <section class="information">
         <div class="information__gallery">
           <picture class="information__gallery-image--first">
-            <img
-              class="information__gallery-image information__gallery-image--desktop"
-              src="./assets/desktop/image-phone-and-keyboard.jpg"
-              alt="Keychron keyboard with Samsung Galaxy phone on the left side of the keyboard"
+            <source
+              srcset="./assets/desktop/image-phone-and-keyboard.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="./assets/tablet/image-phone-and-keyboard.jpg"
+              media="(min-width: 768px)"
             />
             <img
-              class="information__gallery-image information__gallery-image--tablet"
-              src="./assets/tablet/image-phone-and-keyboard.jpg"
-              alt="Keychron keyboard with Samsung Galaxy phone on the left side of the keyboard"
-            />
-            <img
-              class="information__gallery-image information__gallery-image--mobile"
+              class="information__gallery-image"
               src="./assets/mobile/image-phone-and-keyboard.jpg"
-              alt="Keychron keyboard with Samsung galaxy phone on the left"
+              alt="Keychron keyboard with Samsung Galaxy phone on the left side of the keyboard"
             />
           </picture>
-          <picture class="information__gallery-image--second">
-            <img
-              class="information__gallery-image information__gallery-image--desktop"
-              src="./assets/desktop/image-glass-and-keyboard.jpg"
-              alt="Keychron keyboard on the desk with MX master 3 mouse and glass of water"
-            />
-            <img
-              class="information__gallery-image information__gallery-image--tablet"
-              src="./assets/tablet/image-glass-and-keyboard.jpg"
-              alt="Keychron keyboard on the desk with MX master 3 mouse and glass of water"
-            />
 
+          <picture class="information__gallery-image--second">
+            <source
+              srcset="./assets/desktop/image-glass-and-keyboard.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="./assets/tablet/image-glass-and-keyboard.jpg"
+              media="(min-width: 768px)"
+            />
             <img
-              class="information__gallery-image information__gallery-image--mobile"
+              class="information__gallery-image"
               src="./assets/mobile/image-glass-and-keyboard.jpg"
               alt="Keychron keyboard on the desk with MX master 3 mouse and glass of water"
             />
@@ -123,8 +119,6 @@
             reliable wireless connectivity.
           </p>
         </div>
-        <!-- <div class="decoration"></div>
-        <div class="target"></div> -->
       </section>
       <section class="features">
         <div class="features__container">

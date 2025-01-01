@@ -1,20 +1,4 @@
 /*NOTE: colors*/
-/* NOTE: typography */
-/* NOTE: flexbox
-%flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* NOTE: grid
-%grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* NOTE: typography */
 .information__title, .features__title, .hero__title {
   font-family: "Barlow";
   font-weight: 900;
@@ -286,10 +270,6 @@ body {
   border-radius: 2rem;
 }
 
-.information__gallery-image--tablet, .information__gallery-image--desktop {
-  display: none;
-}
-
 .information__gallery-image--first {
   position: relative;
   transform: translateX(-2rem);
@@ -326,12 +306,6 @@ body {
     padding: 0;
     gap: 3rem;
     margin-bottom: 7.2rem;
-  }
-  .information__gallery-image--desktop, .information__gallery-image--mobile {
-    display: none;
-  }
-  .information__gallery-image--tablet {
-    display: block;
   }
   .information__gallery-image--first {
     transform: translate(0);
@@ -381,12 +355,6 @@ body {
     padding: 0;
     gap: 3rem;
     margin-bottom: 0;
-  }
-  .information__gallery-image--tablet, .information__gallery-image--mobile {
-    display: none;
-  }
-  .information__gallery-image--desktop {
-    display: block;
   }
   .information__gallery-image--first {
     transform: translate(0);

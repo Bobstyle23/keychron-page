@@ -12,11 +12,6 @@
             width: 100%;
             border-radius: 2rem;
 
-            &--tablet,
-            &--desktop {
-                display: none;
-            }
-
             &--first {
                 position: relative;
                 transform: translateX(-2rem);
@@ -66,15 +61,6 @@
             margin-bottom: 7.2rem;
 
             &-image {
-                &--desktop,
-                &--mobile {
-                    display: none;
-                }
-
-                &--tablet {
-                    display: block;
-                }
-
                 &--first {
                     transform: translate(0);
                 }
@@ -134,14 +120,6 @@
             margin-bottom: 0;
 
             &-image {
-                &--tablet, &--mobile {
-                    display: none;
-                }
-
-                &--desktop {
-                    display: block;
-                }
-
                 &--first {
                     transform: translate(0);
                     max-width: 25.5rem;
