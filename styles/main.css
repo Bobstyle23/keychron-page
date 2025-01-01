@@ -227,10 +227,9 @@ body {
 
 @media (min-width: 64.063em) {
   .hero {
-    grid-template-columns: minmax(44.5rem, 1fr) minmax(54rem, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
     padding: 0 16.5rem;
     margin-bottom: 3rem;
-    column-gap: 12.5rem;
     position: relative;
   }
   .hero::after {
@@ -248,6 +247,7 @@ body {
     padding: 0;
     gap: 0;
     max-width: 44.5rem;
+    width: 100%;
   }
   .hero__title {
     font-size: 5.6rem;
@@ -293,7 +293,6 @@ body {
 .information__gallery-image--first {
   position: relative;
   transform: translateX(-2rem);
-  filter: opacity(0.8);
 }
 
 .information__gallery-image--first::before {
@@ -356,6 +355,7 @@ body {
     padding: 0 16.5rem;
     position: relative;
     margin-bottom: 16.8rem;
+    gap: 12.5rem;
   }
   .information::before {
     content: "";
@@ -373,7 +373,6 @@ body {
     padding: 0;
     text-align: justify;
     align-items: baseline;
-    margin-left: 12.5rem;
     max-width: 25.5rem;
     margin-bottom: 0;
     gap: 2.7rem;
