@@ -1,4 +1,45 @@
 .hero {
+  @extend %grid;
+  row-gap: 6.4rem;
+
+  &__content,
+  &__order {
+    @extend %flexbox;
+    gap: 3.2rem;
+  }
+
+  &__content {
+    align-items: baseline;
+    padding: 0 2.4rem;
+  }
+
+  &__title {
+    @extend %text-preset-h1;
+  }
+
+  &__description,
+  &__release-date {
+    @extend %text-preset-body;
+  }
+
+  &__order {
+    flex-direction: row;
+  }
+
+  &__release-date {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__image {
+    display: block;
+
+    img {
+      width: 100%;
+      height: auto;
+      padding-left: 2.4rem;
+    }
+  }
 }
 
 /* .hero { */
@@ -40,7 +81,7 @@
 /*   &__release-date { */
 /*     @extend %text-preset-body; */
 /**/
-/*     text-transform: uppercase; */
+/*     text-transform: uppercase;*/
 /*     font-size: 1.4rem; */
 /*     font-weight: 700; */
 /*   } */
