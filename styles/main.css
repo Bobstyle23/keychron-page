@@ -4,14 +4,12 @@
   text-align: center;
   text-transform: uppercase;
   width: 15rem;
-  max-width: 17.5rem;
   min-height: 4.8rem;
-  max-height: 5.8rem;
   border: none;
   border-radius: 0.8rem; }
 
 /* NOTE: flexbox */
-.information__gallery, .information__content, .features__container, .features__icon {
+.header, .information__gallery, .information__content, .features__container, .features__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,66 +79,26 @@ body {
     .btn--orange:hover {
       background-color: #ff9b62; }
 
-/* .btn { */
-/*     @extend %button-style; */
-/**/
-/*     &:hover { */
-/*         cursor: pointer; */
-/*     } */
-/**/
-/*     &--orange { */
-/*         background-color: $color-orange; */
-/**/
-/*         &:hover { */
-/*             background-color: $color-light-orange; */
-/*         } */
-/*     } */
-/**/
-/*     &--light-gray { */
-/*         background-color: $color-light-gray; */
-/*         color: $color-navy-blue; */
-/**/
-/*         &:hover { */
-/*             background-color: $color-navy-blue; */
-/*             color: $color-white; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/* @include respond-to($breakpoint-desktops) { */
-/*     .btn { */
-/*         width: 17.5rem; */
-/*     } */
-/* } */
+@media (min-width: 48em) {
+  .btn {
+    width: 17.5rem;
+    height: 5.8rem; } }
 .main-container {
   max-width: 144rem;
   margin: 0 auto;
   overflow: hidden; }
 
-/* .header { */
-/*     @extend %flexbox; */
-/**/
-/*     height: auto; */
-/*     flex-direction: row; */
-/*     align-items: center; */
-/*     justify-content: space-between; */
-/*     margin-bottom: 6.4rem; */
-/*     padding: 2.4rem 2.4rem 0; */
-/* } */
-/**/
-/* @include respond-to($breakpoint-tablets) { */
-/*     .header { */
-/*         padding: 4rem 4rem 0; */
-/*     } */
-/* } */
-/**/
-/**/
-/* @include respond-to($breakpoint-desktops) { */
-/*     .header { */
-/*         padding: 5.5rem 16.5rem 0; */
-/*         margin-bottom: 8.3rem; */
-/*     } */
-/* } */
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.3rem 2.4rem 6.4rem; }
+
+@media (min-width: 48em) {
+  .header {
+    padding: 4rem 4rem 6.2rem; } }
+@media (min-width: 75em) {
+  .header {
+    padding: 5.5rem 16.5rem 8.3rem; } }
 /* .hero { */
 /*   @extend %grid; */
 /**/

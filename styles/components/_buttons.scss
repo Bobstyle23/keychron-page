@@ -24,3 +24,10 @@
     }
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .btn {
+    width: 17.5rem;
+    height: 5.8rem;
+  }
+}
