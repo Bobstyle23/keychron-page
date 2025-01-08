@@ -130,6 +130,10 @@ body {
       padding: 0; }
     .hero__order {
       gap: 3.7rem; } }
+@media (min-width: 64em) {
+  .hero {
+    grid-template-columns: 0.75fr 1fr;
+    padding-right: 4rem; } }
 /* .hero { */
 /*   @extend %grid; */
 /**/

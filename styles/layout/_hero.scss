@@ -62,6 +62,13 @@
   }
 }
 
+@include respond-to($breakpoint-large-tablets) {
+  .hero {
+    grid-template-columns: 0.75fr 1fr;
+    padding-right: 4rem;
+  }
+}
+
 /* .hero { */
 /*   @extend %grid; */
 /**/
