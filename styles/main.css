@@ -118,6 +118,18 @@ body {
       height: auto;
       padding-left: 2.4rem; }
 
+@media (min-width: 48em) {
+  .hero {
+    grid-template-columns: 33.9rem 1fr;
+    column-gap: 6.9rem;
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+    align-content: center; }
+    .hero__content, .hero__image,
+    .hero img {
+      padding: 0; }
+    .hero__order {
+      gap: 3.7rem; } }
 /* .hero { */
 /*   @extend %grid; */
 /**/

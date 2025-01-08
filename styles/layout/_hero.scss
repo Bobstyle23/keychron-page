@@ -42,6 +42,26 @@
   }
 }
 
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    grid-template-columns: 33.9rem 1fr;
+    column-gap: 6.9rem;
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+    align-content: center;
+
+    &__content,
+    &__image,
+    img {
+      padding: 0;
+    }
+
+    &__order {
+      gap: 3.7rem;
+    }
+  }
+}
+
 /* .hero { */
 /*   @extend %grid; */
 /**/
