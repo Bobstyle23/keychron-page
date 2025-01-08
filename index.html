@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -56,53 +56,54 @@
             <span class="hero__release-date">Release on 5/27</span>
           </div>
         </div>
-        <img
-          class="hero__image hero__image--desktop"
-          src="./assets/desktop/image-keyboard.jpg"
-          alt="Keychron wireless tenkerless swappable keyboard"
-        />
-        <img
-          class="hero__image hero__image--tablet"
-          src="./assets/tablet/image-keyboard.jpg"
-          alt="Keychron wireless tenkerless swappable keyboard"
-        />
-        <img
-          class="hero__image hero__image--mobile"
-          src="./assets/mobile/image-keyboard.jpg"
-          alt="Keychron wireless tenkerless swappable keyboard"
-        />
+
+        <picture>
+          <source
+            srcset="./assets/desktop/keyboard-image.svg"
+            media="(min-width: 64em)"
+          />
+          <source
+            srcset="./assets/tablet/keyboard-image.svg"
+            media="(min-width: 48em)"
+          />
+          <img
+            class="hero__image"
+            src="./assets/mobile/keyboard-image.svg"
+            alt="Keychron wireless tenkerless swappable keyboard image"
+          />
+        </picture>
       </section>
 
       <section class="information">
         <div class="information__gallery">
           <picture class="information__gallery-image--first">
             <source
-              srcset="./assets/desktop/image-phone-and-keyboard.jpg"
-              media="(min-width: 1024px)"
+              srcset="./assets/desktop/phone-and-keyboard.svg"
+              media="(min-width: 64em)"
             />
             <source
-              srcset="./assets/tablet/image-phone-and-keyboard.jpg"
-              media="(min-width: 768px)"
+              srcset="./assets/tablet/phone-and-keyboard.svg"
+              media="(min-width: 48em)"
             />
             <img
               class="information__gallery-image"
-              src="./assets/mobile/image-phone-and-keyboard.jpg"
+              src="./assets/mobile/image-phone-keyboard.svg"
               alt="Keychron keyboard with Samsung Galaxy phone on the left side of the keyboard"
             />
           </picture>
 
           <picture class="information__gallery-image--second">
             <source
-              srcset="./assets/desktop/image-glass-and-keyboard.jpg"
-              media="(min-width: 1024px)"
+              srcset="./assets/desktop/glass-and-keyboard.svg"
+              media="(min-width: 64em)"
             />
             <source
-              srcset="./assets/tablet/image-glass-and-keyboard.jpg"
-              media="(min-width: 768px)"
+              srcset="./assets/tablet/glass-and-keyboard.svg"
+              media="(min-width: 48em)"
             />
             <img
               class="information__gallery-image"
-              src="./assets/mobile/image-glass-and-keyboard.jpg"
+              src="./assets/mobile/glass-and-keyboard.svg"
               alt="Keychron keyboard on the desk with MX master 3 mouse and glass of water"
             />
           </picture>
