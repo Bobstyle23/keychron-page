@@ -1,159 +1,161 @@
 .hero {
-    @extend %grid;
-
-    row-gap: 6.4rem;
-    height: auto;
-    overflow: hidden;
-    margin-bottom: 2.4rem;
-
-    &__content {
-        @extend %flexbox;
-
-        align-items: baseline;
-        gap: 3.2rem;
-        padding: 0 2.4rem;
-    }
-
-    &__title {
-        @extend %text-preset-h1;
-
-        font-size: clamp(4.2rem, 2vw, 5.6rem);
-    }
-
-    &__description {
-        @extend %text-preset-body;
-    }
-
-    &__order {
-        @extend %flexbox;
-
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 3.2rem;
-    }
-
-    &__release-date {
-        @extend %text-preset-body;
-
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-
-    &__image {
-        border-radius: 2rem;
-
-        &--desktop,
-        &--tablet {
-            display: none;
-        }
-
-        &--mobile {
-            display: block;
-            width: 100%;
-            transform: translateX(2.4rem);
-        }
-    }
 }
 
-@include respond-to($breakpoint-tablets) {
-    .hero {
-        grid-template-columns: 33.9rem minmax(47.8rem, 54rem);
-        column-gap: 6.9rem;
-        margin-bottom: 4rem;
-        padding-left: 4rem;
-
-        &__content {
-            padding: 0;
-            gap: 0;
-            width: 100%;
-        }
-
-        &__title {
-            font-size: 4.8rem;
-            margin-bottom: 3.4rem;
-        }
-
-        &__description {
-            margin-bottom: 4rem;
-        }
-
-        &__release-date {
-            font-size: 1.5rem;
-        }
-
-        &__image {
-            &--desktop,
-            &--mobile {
-                display: none;
-            }
-
-            &--tablet {
-                display: block;
-                width: 100%;
-            }
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-desktops) {
-    .hero {
-        grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
-        padding: 0 16.5rem;
-        margin-bottom: 3rem;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 25.5rem;
-            height: 24rem;
-            background-color: $color-light-gray;
-            transform: translateX(45%);
-            border-radius: 2rem;
-        }
-
-        &__content {
-            padding: 0;
-            gap: 0;
-            max-width: 44.5rem;
-            width: 100%;
-        }
-
-        &__title {
-            font-size: 5.6rem;
-            margin-bottom: 2.4rem;
-        }
-
-        &__description {
-            font-size: 1.8rem;
-            margin-bottom: 4rem;
-        }
-
-        &__order {
-            gap: 4rem;
-        }
-
-        &__release-date {
-            font-size: 1.6rem;
-        }
-
-        &__image {
-            &--mobile,
-            &--tablet {
-                display: none;
-            }
-
-            &--desktop {
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-}
+/* .hero { */
+/*   @extend %grid; */
+/**/
+/*   row-gap: 6.4rem; */
+/*   height: auto; */
+/*   overflow: hidden; */
+/*   margin-bottom: 2.4rem; */
+/**/
+/*   &__content { */
+/*     @extend %flexbox; */
+/**/
+/*     align-items: baseline; */
+/*     gap: 3.2rem; */
+/*     padding: 0 2.4rem; */
+/*   } */
+/**/
+/*   &__title { */
+/*     @extend %text-preset-h1; */
+/**/
+/*     font-size: clamp(4.2rem, 2vw, 5.6rem); */
+/*   } */
+/**/
+/*   &__description { */
+/*     @extend %text-preset-body; */
+/*   } */
+/**/
+/*   &__order { */
+/*     @extend %flexbox; */
+/**/
+/*     flex-direction: row; */
+/*     width: 100%; */
+/*     align-items: center; */
+/*     justify-content: flex-start; */
+/*     gap: 3.2rem; */
+/*   } */
+/**/
+/*   &__release-date { */
+/*     @extend %text-preset-body; */
+/**/
+/*     text-transform: uppercase; */
+/*     font-size: 1.4rem; */
+/*     font-weight: 700; */
+/*   } */
+/**/
+/*   &__image { */
+/*     border-radius: 2rem; */
+/**/
+/*     &--desktop, */
+/*     &--tablet { */
+/*       display: none; */
+/*     } */
+/**/
+/*     &--mobile { */
+/*       display: block; */
+/*       width: 100%; */
+/*       transform: translateX(2.4rem); */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-tablets) { */
+/*   .hero { */
+/*     grid-template-columns: 33.9rem minmax(47.8rem, 54rem); */
+/*     column-gap: 6.9rem; */
+/*     margin-bottom: 4rem; */
+/*     padding-left: 4rem; */
+/**/
+/*     &__content { */
+/*       padding: 0; */
+/*       gap: 0; */
+/*       width: 100%; */
+/*     } */
+/**/
+/*     &__title { */
+/*       font-size: 4.8rem; */
+/*       margin-bottom: 3.4rem; */
+/*     } */
+/**/
+/*     &__description { */
+/*       margin-bottom: 4rem; */
+/*     } */
+/**/
+/*     &__release-date { */
+/*       font-size: 1.5rem; */
+/*     } */
+/**/
+/*     &__image { */
+/*       &--desktop, */
+/*       &--mobile { */
+/*         display: none; */
+/*       } */
+/**/
+/*       &--tablet { */
+/*         display: block; */
+/*         width: 100%; */
+/*       } */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-desktops) { */
+/*   .hero { */
+/*     grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr)); */
+/*     padding: 0 16.5rem; */
+/*     margin-bottom: 3rem; */
+/*     position: relative; */
+/**/
+/*     &::after { */
+/*       content: ""; */
+/*       position: absolute; */
+/*       top: 0; */
+/*       right: 0; */
+/*       width: 25.5rem; */
+/*       height: 24rem; */
+/*       background-color: $color-light-gray; */
+/*       transform: translateX(45%); */
+/*       border-radius: 2rem; */
+/*     } */
+/**/
+/*     &__content { */
+/*       padding: 0; */
+/*       gap: 0; */
+/*       max-width: 44.5rem; */
+/*       width: 100%; */
+/*     } */
+/**/
+/*     &__title { */
+/*       font-size: 5.6rem; */
+/*       margin-bottom: 2.4rem; */
+/*     } */
+/**/
+/*     &__description { */
+/*       font-size: 1.8rem; */
+/*       margin-bottom: 4rem; */
+/*     } */
+/**/
+/*     &__order { */
+/*       gap: 4rem; */
+/*     } */
+/**/
+/*     &__release-date { */
+/*       font-size: 1.6rem; */
+/*     } */
+/**/
+/*     &__image { */
+/*       &--mobile, */
+/*       &--tablet { */
+/*         display: none; */
+/*       } */
+/**/
+/*       &--desktop { */
+/*         display: block; */
+/*         width: 100%; */
+/*         height: 100%; */
+/*       } */
+/*     } */
+/*   } */
+/* } */

@@ -7,9 +7,6 @@ $color-light-gray: #e8eff2;
 $color-white: #fff;
 
 //* NOTE: breakpoints
-$breakpoint-small-mobiles: "(min-width: 20em) and (max-width: 30em)";
-$breakpoint-large-mobiles: "(min-width: 30.063em) and (max-width: 47.94em)";
-$breakpoint-tablets: "(min-width: 48em) and (max-width: 64em)";
-$breakpoint-large-tablets: "(min-width: 64.063em) and (max-width: 79.063em)";
-
-$breakpoint-desktops: "(min-width: 64.063em)";
+$breakpoint-tablets: "(min-width: 48em)";
+$breakpoint-large-tablets: "(min-width: 64em)";
+$breakpoint-desktops: "(min-width: 75em)";

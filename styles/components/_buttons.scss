@@ -1,31 +1,26 @@
 .btn {
-    @extend %button-style;
+  @extend %button-style;
+  @extend %text-preset-h3;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.625;
+
+  &--gray {
+    background-color: $color-light-gray;
+    color: $color-navy-blue;
 
     &:hover {
-        cursor: pointer;
+      background-color: $color-navy-blue;
+      color: $color-white;
     }
+  }
 
-    &--orange {
-        background-color: $color-orange;
+  &--orange {
+    background-color: $color-orange;
+    color: $color-white;
 
-        &:hover {
-            background-color: $color-light-orange;
-        }
+    &:hover {
+      background-color: $color-light-orange;
     }
-
-    &--light-gray {
-        background-color: $color-light-gray;
-        color: $color-navy-blue;
-
-        &:hover {
-            background-color: $color-navy-blue;
-            color: $color-white;
-        }
-    }
-}
-
-@include respond-to($breakpoint-desktops) {
-    .btn {
-        width: 17.5rem;
-    }
+  }
 }
