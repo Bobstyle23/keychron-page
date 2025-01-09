@@ -58,6 +58,11 @@
       padding: 0;
     }
 
+    &__content {
+      align-self: baseline;
+      margin-top: 6rem;
+    }
+
     &__title {
       margin-bottom: 0.2rem;
     }
@@ -95,7 +100,7 @@
       height: 24rem;
       background-color: $color-light-gray;
       border-radius: 2rem;
-      transform: translateX(45%);
+      transform: translateX(50%);
     }
 
     &__content {
