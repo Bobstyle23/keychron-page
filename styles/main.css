@@ -195,7 +195,7 @@ body {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(241, 103, 24, 0.8);
+          background-color: #f16718;
           mix-blend-mode: multiply;
           border-radius: 2rem; }
   .information__content {
@@ -239,7 +239,7 @@ body {
       height: 23.6rem;
       background-color: #e8eff2;
       border-radius: 2rem;
-      transform: translateX(-45%); }
+      transform: translateX(-50%); }
     .information__content {
       flex-direction: column;
       align-items: baseline;
@@ -281,7 +281,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 16.5rem;
     column-gap: 3rem;
-    margin-bottom: 12.8rem; } }
+    margin-bottom: 12.8rem; }
+    .features__icon {
+      margin-bottom: 2.4rem; } }
 .footer {
   max-width: 27.2rem;
   margin: 0 auto 5rem; }
