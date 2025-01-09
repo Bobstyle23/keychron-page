@@ -249,7 +249,7 @@ body {
       margin: 0;
       gap: 2.7rem; } }
 .features {
-  grid-template-columns: repeat(auto-fit, minmax(32.7rem, 1fr));
+  grid-template-columns: 1fr;
   padding: 0 2.4rem;
   row-gap: 6.4rem;
   margin-bottom: 9.6rem; }
@@ -267,6 +267,7 @@ body {
 
 @media (min-width: 48em) {
   .features {
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1.1rem;
     row-gap: 7.2rem;
     padding: 0 4rem;
@@ -278,27 +279,13 @@ body {
       margin-bottom: 1.6rem; }
     .features__description {
       max-width: 28.1rem; } }
-/* @include respond-to($breakpoint-tablets) { */
-/*     .features { */
-/*         grid-template-columns: repeat(2, 1fr); */
-/*         padding: 0 4rem; */
-/*         row-gap: 7.2rem; */
-/*         column-gap: 1.1rem; */
-/*         margin-bottom: 14.2rem; */
-/**/
-/*         &__container { */
-/*             align-items: baseline; */
-/*             text-align: justify; */
-/*             max-width: 28.1rem; */
-/*         } */
-/**/
-/*         &__description { */
-/*             max-width: 100%; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
+@media (min-width: 75em) {
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr)); */
+    padding: 0 16.5rem;
+    column-gap: 3rem;
+    margin-bottom: 12.8rem; } }
 /* @include respond-to($breakpoint-desktops) { */
 /*     .features { */
 /*         padding: 0 16.5rem; */
