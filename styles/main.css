@@ -221,39 +221,28 @@ body {
       margin-bottom: 14.2rem; }
     .information__description {
       max-width: 39.8rem; } }
-/* @include respond-to($breakpoint-tablets) { */
-/*     .information { */
-/*         padding: 0 4rem; */
-/**/
-/*         &__gallery { */
-/*             padding: 0; */
-/*             gap: 3rem; */
-/*             margin-bottom: 7.2rem; */
-/**/
-/*             &-image { */
-/*                 &--first { */
-/*                     transform: translate(0); */
-/*                 } */
-/*             } */
-/*         } */
-/**/
-/*         &__content { */
-/*             display: grid; */
-/*             grid-template-columns: 0.75fr 1.25fr; */
-/*             padding: 0; */
-/*             text-align: justify; */
-/*             column-gap: 3.6rem; */
-/*             margin-bottom: 14.2rem; */
-/*         } */
-/**/
-/*         &__title, */
-/*         &__description { */
-/*             max-width: 100%; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
+@media (min-width: 75em) {
+  .information {
+    position: relative;
+    padding: 0 16.5rem;
+    grid-template-columns: 1fr 25.5rem;
+    column-gap: 12.5rem;
+    margin-bottom: 16.8rem; }
+    .information::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 25.5rem;
+      height: 23.6rem;
+      background-color: #e8eff2;
+      border-radius: 2rem;
+      transform: translateX(-45%); }
+    .information__content {
+      flex-direction: column;
+      align-items: baseline;
+      margin: 0;
+      gap: 2.7rem; } }
 /* @include respond-to($breakpoint-desktops) { */
 /*     .information { */
 /*         display: flex; */

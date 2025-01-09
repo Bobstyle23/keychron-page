@@ -89,39 +89,35 @@
   }
 }
 
-/* @include respond-to($breakpoint-tablets) { */
-/*     .information { */
-/*         padding: 0 4rem; */
-/**/
-/*         &__gallery { */
-/*             padding: 0; */
-/*             gap: 3rem; */
-/*             margin-bottom: 7.2rem; */
-/**/
-/*             &-image { */
-/*                 &--first { */
-/*                     transform: translate(0); */
-/*                 } */
-/*             } */
-/*         } */
-/**/
-/*         &__content { */
-/*             display: grid; */
-/*             grid-template-columns: 0.75fr 1.25fr; */
-/*             padding: 0; */
-/*             text-align: justify; */
-/*             column-gap: 3.6rem; */
-/*             margin-bottom: 14.2rem; */
-/*         } */
-/**/
-/*         &__title, */
-/*         &__description { */
-/*             max-width: 100%; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
+@include respond-to($breakpoint-desktops) {
+  .information {
+    position: relative;
+    padding: 0 16.5rem;
+    grid-template-columns: 1fr 25.5rem;
+    column-gap: 12.5rem;
+    margin-bottom: 16.8rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 25.5rem;
+      height: 23.6rem;
+      background-color: $color-light-gray;
+      border-radius: 2rem;
+      transform: translateX(-45%);
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: baseline;
+      margin: 0;
+      gap: 2.7rem;
+    }
+  }
+}
+
 /* @include respond-to($breakpoint-desktops) { */
 /*     .information { */
 /*         display: flex; */
