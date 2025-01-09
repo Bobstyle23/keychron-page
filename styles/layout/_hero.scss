@@ -95,11 +95,13 @@
       height: 24rem;
       background-color: $color-light-gray;
       border-radius: 2rem;
-      transform: translateX(45%);
+      transform: translateX(50%);
     }
 
     &__content {
       gap: 0;
+      align-self: baseline;
+      margin-top: 6rem;
     }
 
     &__title {

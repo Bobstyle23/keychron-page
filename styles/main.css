@@ -157,9 +157,11 @@ body {
       height: 24rem;
       background-color: #e8eff2;
       border-radius: 2rem;
-      transform: translateX(45%); }
+      transform: translateX(50%); }
     .hero__content {
-      gap: 0; }
+      gap: 0;
+      align-self: baseline;
+      margin-top: 6rem; }
     .hero__title {
       font-size: 5.6rem;
       line-height: 1;
