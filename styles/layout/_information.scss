@@ -89,14 +89,6 @@
   }
 }
 
-@include respond-to($breakpoint-large-tablets) {
-  .information {
-    &__content {
-      justify-content: space-around;
-    }
-  }
-}
-
 @include respond-to($breakpoint-desktops) {
   .information {
     position: relative;

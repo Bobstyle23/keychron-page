@@ -223,9 +223,6 @@ body {
       margin-bottom: 14.2rem; }
     .information__description {
       max-width: 39.8rem; } }
-@media (min-width: 64em) {
-  .information__content {
-    justify-content: space-around; } }
 @media (min-width: 75em) {
   .information {
     position: relative;
@@ -282,23 +279,9 @@ body {
 @media (min-width: 75em) {
   .features {
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr)); */
     padding: 0 16.5rem;
     column-gap: 3rem;
     margin-bottom: 12.8rem; } }
-/* @include respond-to($breakpoint-desktops) { */
-/*     .features { */
-/*         padding: 0 16.5rem; */
-/*         grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr)); */
-/*         column-gap: 3rem; */
-/*         margin-bottom: 12.8rem; */
-/**/
-/*         &__container { */
-/*             align-items: baseline; */
-/*             text-align: justify; */
-/*         } */
-/*     } */
-/* } */
 .footer {
   max-width: 27.2rem;
   margin: 0 auto 5rem; }
