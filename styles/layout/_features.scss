@@ -33,27 +33,28 @@
   }
 }
 
-/* @include respond-to($breakpoint-tablets) { */
-/*     .features { */
-/*         grid-template-columns: repeat(2, 1fr); */
-/*         padding: 0 4rem; */
-/*         row-gap: 7.2rem; */
-/*         column-gap: 1.1rem; */
-/*         margin-bottom: 14.2rem; */
-/**/
-/*         &__container { */
-/*             align-items: baseline; */
-/*             text-align: justify; */
-/*             max-width: 28.1rem; */
-/*         } */
-/**/
-/*         &__description { */
-/*             max-width: 100%; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
+@include respond-to($breakpoint-tablets) {
+  .features {
+    column-gap: 1.1rem;
+    row-gap: 7.2rem;
+    padding: 0 4rem;
+    margin-bottom: 14.2rem;
+
+    &__container {
+      text-align: left;
+      align-items: baseline;
+    }
+
+    &__icon {
+      margin-bottom: 1.6rem;
+    }
+
+    &__description {
+      max-width: 28.1rem;
+    }
+  }
+}
+
 /* @include respond-to($breakpoint-desktops) { */
 /*     .features { */
 /*         padding: 0 16.5rem; */

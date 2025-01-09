@@ -265,45 +265,19 @@ body {
   .features__description {
     max-width: 32.7rem; }
 
-/* .features { */
-/*     @extend %grid; */
-/**/
-/*     padding: 0 2.4rem; */
-/*     grid-template-columns: 1fr; */
-/*     align-items: center; */
-/*     row-gap: 6.4rem; */
-/*     margin-bottom: 9.6rem; */
-/**/
-/*     &__container { */
-/*         @extend %flexbox; */
-/**/
-/*         align-items: center; */
-/*         justify-content: center; */
-/*         gap: 2.4rem; */
-/*         text-align: center; */
-/*     } */
-/**/
-/*     &__icon { */
-/*         @extend %flexbox; */
-/**/
-/*         width: 6.5rem; */
-/*         height: 6.5rem; */
-/*         background-color: $color-orange; */
-/*         border-radius: 1.6rem; */
-/*         margin-bottom: 2.4rem; */
-/*     } */
-/**/
-/*     &__title { */
-/*         @extend %text-preset-h3; */
-/*     } */
-/**/
-/*     &__description { */
-/*         @extend %text-preset-body; */
-/**/
-/*         max-width: 32.7rem; */
-/*     } */
-/* } */
-/**/
+@media (min-width: 48em) {
+  .features {
+    column-gap: 1.1rem;
+    row-gap: 7.2rem;
+    padding: 0 4rem;
+    margin-bottom: 14.2rem; }
+    .features__container {
+      text-align: left;
+      align-items: baseline; }
+    .features__icon {
+      margin-bottom: 1.6rem; }
+    .features__description {
+      max-width: 28.1rem; } }
 /* @include respond-to($breakpoint-tablets) { */
 /*     .features { */
 /*         grid-template-columns: repeat(2, 1fr); */
