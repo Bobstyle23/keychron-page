@@ -246,7 +246,9 @@ body {
     .information__content {
       flex-direction: column;
       align-items: baseline;
+      align-self: baseline;
       margin: 0;
+      margin-top: 11.2rem;
       gap: 2.7rem; } }
 .features {
   grid-template-columns: 1fr;
