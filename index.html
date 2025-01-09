@@ -40,24 +40,25 @@
           src="./assets/shared/logo.svg"
           alt="Typemaster logo"
         />
-        <button type="button" class="header__btn btn btn--light-gray">
-          Pre-order now
-        </button>
+        <button type="button" class="btn btn--gray">Pre-order now</button>
       </header>
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title">Typemaster Keyboard</h1>
+          <h1 class="hero__title">
+            Typemaster <br />
+            Keyboard
+          </h1>
           <p class="hero__description">
             Improve your productivity and gaming without breaking the bank.
             Upgrade to a high quality mechanical typing experience.
           </p>
           <div class="hero__order">
-            <button class="hero__btn btn btn--orange">Pre-order now</button>
+            <button class="btn btn--orange">Pre-order now</button>
             <span class="hero__release-date">Release on 5/27</span>
           </div>
         </div>
 
-        <picture>
+        <picture class="hero__image">
           <source
             srcset="./assets/desktop/keyboard-image.svg"
             media="(min-width: 64em)"
@@ -67,7 +68,6 @@
             media="(min-width: 48em)"
           />
           <img
-            class="hero__image"
             src="./assets/mobile/keyboard-image.svg"
             alt="Keychron wireless tenkerless swappable keyboard image"
           />
@@ -76,34 +76,38 @@
 
       <section class="information">
         <div class="information__gallery">
-          <picture class="information__gallery-image--first">
+          <picture
+            class="information__gallery-image information__gallery-image--first"
+          >
             <source
-              srcset="./assets/desktop/phone-and-keyboard.svg"
+              srcset="./assets/desktop/image-phone-and-keyboard.jpg"
               media="(min-width: 64em)"
             />
             <source
-              srcset="./assets/tablet/phone-and-keyboard.svg"
+              srcset="./assets/tablet/image-phone-and-keyboard.jpg"
               media="(min-width: 48em)"
             />
             <img
               class="information__gallery-image"
-              src="./assets/mobile/image-phone-keyboard.svg"
+              src="./assets/mobile/image-phone-and-keyboard.jpg"
               alt="Keychron keyboard with Samsung Galaxy phone on the left side of the keyboard"
             />
           </picture>
 
-          <picture class="information__gallery-image--second">
+          <picture
+            class="information__gallery-image information__gallery-image--second"
+          >
             <source
-              srcset="./assets/desktop/glass-and-keyboard.svg"
+              srcset="./assets/desktop/image-glass-and-keyboard.jpg"
               media="(min-width: 64em)"
             />
             <source
-              srcset="./assets/tablet/glass-and-keyboard.svg"
+              srcset="./assets/tablet/image-glass-and-keyboard.jpg"
               media="(min-width: 48em)"
             />
             <img
               class="information__gallery-image"
-              src="./assets/mobile/glass-and-keyboard.svg"
+              src="./assets/mobile/image-glass-and-keyboard.jpg"
               alt="Keychron keyboard on the desk with MX master 3 mouse and glass of water"
             />
           </picture>
