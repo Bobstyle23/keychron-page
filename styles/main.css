@@ -223,6 +223,9 @@ body {
       margin-bottom: 14.2rem; }
     .information__description {
       max-width: 39.8rem; } }
+@media (min-width: 64em) {
+  .information__content {
+    justify-content: space-around; } }
 @media (min-width: 75em) {
   .information {
     position: relative;
@@ -245,54 +248,6 @@ body {
       align-items: baseline;
       margin: 0;
       gap: 2.7rem; } }
-/* @include respond-to($breakpoint-desktops) { */
-/*     .information { */
-/*         display: flex; */
-/*         padding: 0 16.5rem; */
-/*         position: relative; */
-/*         margin-bottom: 16.8rem; */
-/*         gap: 12.5rem; */
-/**/
-/*         &::before { */
-/*             content: ""; */
-/*             position: absolute; */
-/*             left: 0; */
-/*             width: 25.5rem; */
-/*             height: 24rem; */
-/*             left: 0; */
-/*             bottom: 0; */
-/*             background-color: $color-light-gray; */
-/*             transform: translateX(-45%); */
-/*             border-radius: 2rem; */
-/*         } */
-/**/
-/*         &__content { */
-/*             padding: 0; */
-/*             text-align: justify; */
-/*             align-items: baseline; */
-/*             max-width: 25.5rem; */
-/*             margin-bottom: 0; */
-/*             gap: 2.7rem; */
-/*         } */
-/**/
-/*         &__gallery { */
-/*             padding: 0; */
-/*             gap: 3rem; */
-/*             margin-bottom: 0; */
-/**/
-/*             &-image { */
-/*                 &--first { */
-/*                     transform: translate(0); */
-/*                     max-width: 25.5rem; */
-/*                 } */
-/**/
-/*                 &--second { */
-/*                     max-width: 44.5rem; */
-/*                 } */
-/*             } */
-/*         } */
-/*     } */
-/* } */
 .features {
   padding: 0 2.4rem;
   grid-template-columns: 1fr;
