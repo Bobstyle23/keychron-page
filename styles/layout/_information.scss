@@ -19,7 +19,7 @@
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 2rem;
       }
 
@@ -53,7 +53,39 @@
 
   &__description {
     @extend %text-preset-body;
+    font-size: 1.6rem;
     max-width: 32.7rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .information {
+    row-gap: 7.2rem;
+    padding: 0 4rem;
+
+    &__gallery,
+    &__content {
+      gap: 3rem;
+      padding: 0;
+
+      &-image {
+        &--first {
+          transform: translate(0);
+        }
+      }
+    }
+
+    &__content {
+      text-align: justify;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3.6rem;
+      margin-bottom: 14.2rem;
+    }
+
+    &__description {
+      max-width: 39.8rem;
+    }
   }
 }
 
