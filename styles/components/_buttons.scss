@@ -5,6 +5,10 @@
   font-weight: 700;
   line-height: 1.625;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &--gray {
     background-color: $color-light-gray;
     color: $color-navy-blue;

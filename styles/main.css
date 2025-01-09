@@ -67,6 +67,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.625; }
+  .btn:hover {
+    cursor: pointer; }
   .btn--gray {
     background-color: #e8eff2;
     color: #162542; }
