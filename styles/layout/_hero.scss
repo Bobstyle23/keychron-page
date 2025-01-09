@@ -58,6 +58,11 @@
       padding: 0;
     }
 
+    &__content {
+      align-self: baseline;
+      margin-top: 6rem;
+    }
+
     &__title {
       margin-bottom: 0.2rem;
     }
@@ -100,8 +105,6 @@
 
     &__content {
       gap: 0;
-      align-self: baseline;
-      margin-top: 6rem;
     }
 
     &__title {
