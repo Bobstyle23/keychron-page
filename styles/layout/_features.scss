@@ -1,73 +1,69 @@
 .features {
-    @extend %grid;
+  @extend %grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.7rem, 1fr));
+  padding: 0 2.4rem;
+  row-gap: 6.4rem;
+  margin-bottom: 9.6rem;
 
-    padding: 0 2.4rem;
-    grid-template-columns: 1fr;
-    align-items: center;
-    row-gap: 6.4rem;
-    margin-bottom: 9.6rem;
+  &__container,
+  &__icon {
+    @extend %flexbox;
+  }
 
-    &__container {
-        @extend %flexbox;
+  &__container {
+    gap: 2.4rem;
+    text-align: center;
+  }
 
-        align-items: center;
-        justify-content: center;
-        gap: 2.4rem;
-        text-align: center;
-    }
+  &__icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: $color-orange;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
 
-    &__icon {
-        @extend %flexbox;
+  &__title {
+    @extend %text-preset-h3;
+  }
 
-        width: 6.5rem;
-        height: 6.5rem;
-        background-color: $color-orange;
-        border-radius: 1.6rem;
-        margin-bottom: 2.4rem;
-    }
-
-    &__title {
-        @extend %text-preset-h3;
-    }
-
-    &__description {
-        @extend %text-preset-body;
-
-        max-width: 32.7rem;
-    }
+  &__description {
+    @extend %text-preset-body;
+    max-width: 32.7rem;
+  }
 }
 
-@include respond-to($breakpoint-tablets) {
-    .features {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 4rem;
-        row-gap: 7.2rem;
-        column-gap: 1.1rem;
-        margin-bottom: 14.2rem;
-
-        &__container {
-            align-items: baseline;
-            text-align: justify;
-            max-width: 28.1rem;
-        }
-
-        &__description {
-            max-width: 100%;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-desktops) {
-    .features {
-        padding: 0 16.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
-        column-gap: 3rem;
-        margin-bottom: 12.8rem;
-
-        &__container {
-            align-items: baseline;
-            text-align: justify;
-        }
-    }
-}
+/* @include respond-to($breakpoint-tablets) { */
+/*     .features { */
+/*         grid-template-columns: repeat(2, 1fr); */
+/*         padding: 0 4rem; */
+/*         row-gap: 7.2rem; */
+/*         column-gap: 1.1rem; */
+/*         margin-bottom: 14.2rem; */
+/**/
+/*         &__container { */
+/*             align-items: baseline; */
+/*             text-align: justify; */
+/*             max-width: 28.1rem; */
+/*         } */
+/**/
+/*         &__description { */
+/*             max-width: 100%; */
+/*         } */
+/*     } */
+/* } */
+/**/
+/**/
+/* @include respond-to($breakpoint-desktops) { */
+/*     .features { */
+/*         padding: 0 16.5rem; */
+/*         grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr)); */
+/*         column-gap: 3rem; */
+/*         margin-bottom: 12.8rem; */
+/**/
+/*         &__container { */
+/*             align-items: baseline; */
+/*             text-align: justify; */
+/*         } */
+/*     } */
+/* } */
